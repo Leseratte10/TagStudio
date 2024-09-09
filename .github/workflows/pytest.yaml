@@ -6,6 +6,8 @@ jobs:
   pytest:
     name: Run tests
     runs-on: ubuntu-latest
+    container:
+      image: python:3.12-bullseye
 
     steps:
       - name: Checkout repo
